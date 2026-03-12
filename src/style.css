@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .box {
+        /* @apply h-[90%] w-[22%] bg-slate-400 mx-[1rem] rounded-lg hover:scale-105 hover:transition-all hover:ease-in hover:duration-200 hover:shadow-white; */
+        @apply h-[90%] w-[40%] bg-blue-200 mx-[1rem] rounded-lg 
+            /* transition-all ease-in duration-200  */
+            border-4 border-transparent
+            hover:border-4 hover:border-white;
+    }
+    .topic {
+        @apply h-[10%] w-auto bg-blue-400 rounded-lg shadow-lg text-center font-bold text-2xl flex justify-center items-center;
+    }
+    .tasks {
+        @apply m-2 w-5 h-5 text-white ;
+    }
+}
